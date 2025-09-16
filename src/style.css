@@ -433,10 +433,10 @@ h2.titulo span {
         background-color: #000;
     }
 
-    .nav {
+   /*nav {
         display: none;
     }
-
+*/
     .logo {
         display: block;
         font-size: 20px;

@@ -343,6 +343,11 @@ h2.titulo span {
     max-height: 60px;
 }
 
+/* ===== CORREÇÃO HEADER FIXO ===== */
+section {
+    scroll-margin-top: 120px; /* compensa a altura do header fixo */
+}
+
 /* ===== RESPONSIVIDADE ===== */
 @media screen and (max-width: 1024px) {
     .header {
@@ -433,10 +438,6 @@ h2.titulo span {
         background-color: #000;
     }
 
-   /*nav {
-        display: none;
-    }
-*/
     .logo {
         display: block;
         font-size: 20px;

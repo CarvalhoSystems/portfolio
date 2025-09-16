@@ -32,7 +32,6 @@ h2.titulo span {
     align-items: center;
     padding: 40px 4%;
     background-color: #000;
-    /* Alterado para 'fixed' para que o header fique sempre no topo, acima de tudo */
     position: fixed;
     top: 0;
     left: 0;
@@ -91,8 +90,7 @@ h2.titulo span {
     gap: 80px;
     position: relative;
     z-index: 5;
-    /* Adicionado um margin-top para criar espaço abaixo do header fixo */
-    margin-top: 100px;
+    /* REMOVIDO: O margin-top, para evitar conflitos */
 }
 
 .text-section {
@@ -130,7 +128,7 @@ h2.titulo span {
 
 .main-contact-button:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(243, 216, 10, 0.7);
+    box-shadow: 12px 25px rgba(243, 216, 10, 0.7);
 }
 
 .image-section {
@@ -358,150 +356,126 @@ h2.titulo span {
     max-height: 60px;
 }
 
-/* ===== RESPONSIVIDADE (REVISADO E OTIMIZADO) ===== */
-
-/* Estilos para telas de tablets (menor que 1024px) */
+/* ===== RESPONSIVIDADE (Versão Definitiva) ===== */
 @media screen and (max-width: 1024px) {
+    body {
+        /* Aumentamos o padding do body para criar a "margem de segurança" */
+        padding-top: 80px;
+    }
     .header {
         padding: 30px 4%;
     }
-
     .main-content {
         flex-direction: column;
         text-align: center;
-        /* Ajustado padding e margin-top para tablets */
-        padding: 60px 4% 40px 4%;
-        margin-top: 80px;
+        /* Removido o margin-top, ajustando o padding para funcionar */
+        padding: 0 4% 40px 4%;
         gap: 40px;
     }
-
     .text-section h1 {
         font-size: 50px;
     }
-
     .image-section {
         width: 350px;
         height: 350px;
     }
 }
 
-/* Estilos para smartphones (menor que 768px) */
 @media screen and (max-width: 768px) {
+    body {
+        padding-top: 100px;
+    }
     .header {
         flex-direction: column;
         padding: 20px 4%;
-        text-align: center;
     }
-
     .nav ul {
         gap: 15px;
         margin-top: 15px;
     }
-
     .contact-button {
         margin-top: 15px;
     }
-
     .main-content {
         flex-direction: column;
         text-align: center;
-        /* Aumentado o margin-top para garantir que o conteúdo não seja cortado */
-        margin-top: 120px;
-        padding: 40px 4%;
+        padding: 0 4% 40px 4%;
         gap: 30px;
     }
-
     .text-section {
         max-width: 100%;
     }
-
     .text-section h1 {
         font-size: 38px;
         line-height: 1.2;
     }
-
     .text-section p {
         font-size: 16px;
         padding: 0 10px;
     }
-
     .main-contact-button {
         padding: 15px 30px;
     }
-
     .sobre .flex {
         flex-direction: column;
         text-align: center;
     }
-
     .txt-sobre img {
         max-width: 250px;
         margin-top: 20px;
     }
-
     .footer .line-footer {
         justify-content: center;
         flex-direction: column;
         gap: 20px;
     }
-
     .footer .line-footer p {
         text-align: center;
     }
 }
 
-/* Estilos para telas muito pequenas (menor que 480px) */
 @media screen and (max-width: 480px) {
+    body {
+        padding-top: 120px;
+    }
     .header {
         padding: 15px 4%;
     }
-
     .nav {
         display: none;
     }
-
     .logo {
         display: none;
     }
-
     .contact-button {
         margin: 0 auto;
         display: block;
         width: fit-content;
     }
-
     .main-content {
-        /* Aumentado o margin-top para telas muito pequenas */
-        margin-top: 100px;
-        padding: 20px 4%;
+        padding: 0 4% 20px 4%;
         gap: 20px;
     }
-
     .text-section h1 {
         font-size: 28px;
         text-align: center;
     }
-
     .text-section p {
         font-size: 14px;
         padding: 0 5px;
     }
-
     .image-section {
         width: 280px;
         height: 280px;
     }
-
     .profile-frame {
         width: 240px;
         height: 240px;
     }
-
     .especialidades .flex,
     .projetos .flex {
         grid-template-columns: 1fr;
     }
-
     .especialidade-box,
     .projeto-box {
         max-width: 100%;

@@ -6,25 +6,21 @@
     <title>Carvalho Systems - Portfólio de Web Design e Desenvolvimento</title>
     <meta name="description" content="Carvalho Systems - Portfólio de Web Design e Desenvolvimento">
     
-    <!-- Favicon -->
-<link rel="icon" type="image/png" href="src\img\favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="imagem/svg+xml" href="/favicon.svg" />
-<link rel="ícone do atalho" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="src\img\favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="imagem/svg+xml" href="/favicon.svg" />
+    <link rel="ícone do atalho" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Google Fonts & Bootstrap Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
 
-    <!-- ===== HEADER ===== -->
     <header class="header">
         <a href="/" class="logo" aria-label="Página inicial de Carvalho Systems">Carvalho Systems</a>
         <nav class="nav" aria-label="Navegação Principal">
@@ -35,10 +31,8 @@
                 <li><a href="#projetos">Projetos</a></li>
             </ul>
         </nav>
-        
     </header>
 
-    <!-- ===== MAIN CONTENT ===== -->
     <main class="main-content" id="inicio">
         <section class="text-section">
             <h1>TRANSFORMANDO IDEIAS <br> EM REALIDADE DIGITAL.</h1>
@@ -53,7 +47,6 @@
         </section>
     </main>
 
-    <!-- ===== ESPECIALIDADES ===== -->
     <section class="especialidades" id="especialidades">
         <div class="interface">
             <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
@@ -77,108 +70,217 @@
         </div>
     </section>
 
-    <!-- ===== SOBRE ===== -->
     <section class="sobre" id="sobre">
         <div class="interface">
             <div class="flex">
                 <div class="txt-sobre">
-                    <img src="/src/img/foto-sobre-mim.png" alt="Foto de perfil de Carvalho Systems">
+                    <img src="/src/img/foto-capa.png" alt="Foto de perfil de Carvalho Systems">
                 </div>
                 <div class="txt-sobre">
                     <h2 class="titulo">MUITO PRAZER, SOU <br><span>RODRIGO DE CARVALHO.</span></h2>
-                    <p>Sou profissional com 9 anos de experiência em Telecomunicações e atualmente em transição para TI, focado em Análise e Desenvolvimento de Sistemas. Como desenvolvedor web, possuo experiência prática em criação de sites e aplicações escaláveis.</p>
+                    <p>Sou profissional com 9 anos de experiência em Telecomunicações, o que me proporcionou grande **resiliência e foco na resolução de problemas complexos.** Atualmente, estou em transição para TI, focado em Análise e Desenvolvimento de Sistemas. Como desenvolvedor web, possuo experiência prática em criação de sites e aplicações escaláveis.</p>
                     <div class="btn-social">
-                        <a href="https://github.com/CarvalhoSystems" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/rodrigo-carvalho-273a8937a" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.instagram.com/digo_khaa" target="_blank"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/5511999258488" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://github.com/CarvalhoSystems" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rodrigo-carvalho-273a8937a" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/digo_khaa" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/5511999258488" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== PROJETOS ===== -->
     <section class="projetos" id="projetos">
         <div class="interface">
             <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
             <div class="flex">
+                
                 <div class="projeto-box">
-                    <h3>yb-make-site</h3>
-                    <p>Site de Maquiagem da minha filha, 100% funcional.</p>
-                    <a href="https://github.com/CarvalhoSystems/yb-make-site" target="_blank">Ver no GitHub</a>
-                    <a href="https://carvalhosystems.github.io/yb-make-site/" target="_blank">Ver o Site</a>
+                    <div class="project-thumb" style="background-image: url('/src/img/capa-yb.png');" aria-label="Imagem de capa da Loja Virtual YB Make"></div>
+                    
+                    <h3>yb-make-site (E-commerce Real)</h3>
+                    <p class="project-detail">
+                        **Desafio:** Criar uma loja virtual de alta conversão e 100% funcional para o mercado real de maquiagem, garantindo uma experiência de usuário (UX) fluida.
+                    </p>
+                    <p class="project-detail">
+                        **Resultado:** Plataforma e-commerce responsiva, focada na otimização de imagens e velocidade (Performance Web) e pronta para integrar sistemas de pagamento.
+                    </p>
+                    <p class="project-stack">
+                        Stack: HTML5, CSS3, JavaScript (Vanilla), **Foco em SEO**
+                    </p>
+                    <div class="project-actions">
+                        <a href="https://carvalhosystems.github.io/yb-make-site/" target="_blank" class="btn-demo">🚀 Ver o Site</a>
+                        <a href="https://github.com/CarvalhoSystems/yb-make-site" target="_blank" class="btn-github">GitHub</a>
+                    </div>
                 </div>
+                
                 <div class="projeto-box">
-                    <h3>PROJETO-BANCO</h3>
-                    <p>Sistema simples de app bancário para demonstração de funcionalidades futuras.</p>
-                    <a href="https://github.com/CarvalhoSystems/Banco-Digital" target="_blank">Ver no GitHub</a>
-                    <a  href="https://carvalhosystems.github.io/Banco-Digital/" target="_blank">Ver o Site</a>
+                    <div class="project-thumb" style="background-image: url('/src/img/capa-banco.png');" aria-label="Imagem de capa do PROJETO-BANCO"></div>
+                    
+                    <h3>PROJETO-BANCO (Simulação Full-Stack)</h3>
+                    <p class="project-detail">
+                        **Desafio:** Desenvolver um sistema bancário simulado para aplicar conceitos de Programação Orientada a Objetos (POO) e arquitetura de código modular para segurança.
+                    </p>
+                    <p class="project-detail">
+                        **Resultado:** Aplicação funcional de login/extrato/transferência, demonstrando domínio de POO, persistência de dados e tratamento de rotas.
+                    </p>
+                    <p class="project-stack">
+                        Stack: HTML, CSS, JavaScript (POO), **[AJUSTE AQUI O BACKEND REAL: Ex: Node.js, Python, PHP]**
+                    </p>
+                    <div class="project-actions">
+                        <a href="https://carvalhosystems.github.io/Banco-Digital/" target="_blank" class="btn-demo">🚀 Ver o Site</a>
+                        <a href="https://github.com/CarvalhoSystems/Banco-Digital" target="_blank" class="btn-github">GitHub</a>
+                    </div>
                 </div>
+                
                 <div class="projeto-box">
+                    <div class="project-thumb" style="background-image: url('/src/img/capa-Vida+.png');" aria-label="Imagem de capa do Sistema de Convênio"></div>
+                    
+                    <h3>Sistema de Convênio (CRUD)</h3>
+                    <p class="project-detail">
+                        **Desafio:** Desenvolver um sistema administrativo para cadastro e gerenciamento de pacientes e exames médicos (CRUD), com foco em integridade de dados e validação de formulários.
+                    </p>
+                    <p class="project-detail">
+                        **Resultado:** Interface de gestão completa que permite a criação, leitura, atualização e exclusão de registros, demonstrando habilidade em lógica de negócios e sistemas de gestão de usuários.
+                    </p>
+                    <p class="project-stack">
+                        Stack: HTML, CSS, JavaScript (CRUD), Persistência de Dados (Local Storage/JSON)
+                    </p>
+                    <div class="project-actions">
+                        <a href="https://CarvalhoSystems.github.io/VIDA-/" target="_blank" class="btn-demo">🚀 Ver o Site</a>
+                        <a href="https://github.com/CarvalhoSystems/VIDA-" target="_blank" class="btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="projeto-box">
+                    <div class="project-thumb" style="background-image: url('/src/img/');" aria-label="Imagem de capa do Sistema de Assistência Técnica"></div>
+                    
+                    <h3>Sistema de Assistência Técnica (Em Andamento)</h3>
+                    <p class="project-detail">
+                        **Desafio:** Construir um sistema de gestão de ordens de serviço (OS) e controle de estoque para uma assistência técnica local, substituindo planilhas manuais.
+                    </p>
+                    <p class="project-detail">
+                        **Status:** Em desenvolvimento. Foco no design da base de dados e na arquitetura de rotas de API para garantir escalabilidade da gestão de clientes e serviços.
+                    </p>
+                    <p class="project-stack">
+                        Stack: HTML, CSS, JavaScript, **[SUA TECNOLOGIA BACKEND PRINCIPAL]**
+                    </p>
+                    <div class="project-actions">
+                        <a href="[LINK DO REPOSITÓRIO DA ASSISTÊNCIA]" target="_blank" class="btn-github full-width">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="projeto-box">
+                    <div class="project-thumb" style="background-image: url('src/img/kb-site-capa.jpg');" aria-label="Imagem de capa do KB-Site"></div>
+                    
                     <h3>KB-Site</h3>
-                    <p>Site para loja de roupas Fitness em desenvolvimento.</p>
-                    <a href="https://github.com/CarvalhoSystems/KB-Site" target="_blank">Ver no GitHub</a>
+                    <p class="project-detail">
+                        **Desafio:** Construção de um E-commerce de roupas fitness utilizando pré-processadores CSS para otimização do fluxo de trabalho.
+                    </p>
+                    <p class="project-detail">
+                        **Status:** Em desenvolvimento. Demonstração de uso de SASS para escalabilidade e design modular.
+                    </p>
+                    <p class="project-stack">
+                        Stack: HTML, SASS/CSS, JQuery
+                    </p>
+                    <div class="project-actions">
+                        <a href="https://github.com/CarvalhoSystems/KB-Site" target="_blank" class="btn-github full-width">GitHub</a>
+                    </div>
                 </div>
+
                 <div class="projeto-box">
+                    <div class="project-thumb" style="background-image: url('src/img/multas-capa.jpg');" aria-label="Imagem de capa do Sistema de Multas"></div>
+                    
                     <h3>Sistemas-de-Muitas-simples</h3>
-                    <p>Sistema simples usado em treinamento da faculdade.</p>
-                    <a href="https://github.com/CarvalhoSystems/Sistemas-de-Muitas-simples" target="_blank">Ver no GitHub</a>
+                    <p class="project-detail">
+                        **Desafio:** Treinamento universitário para manipular o DOM e realizar validações básicas de formulário com JavaScript.
+                    </p>
+                    <p class="project-detail">
+                        **Resultado:** Script funcional que calcula multas com base na velocidade fornecida pelo usuário.
+                    </p>
+                    <p class="project-stack">
+                        Stack: HTML, JavaScript (DOM)
+                    </p>
+                    <div class="project-actions">
+                         <a href="https://github.com/CarvalhoSystems/Sistemas-de-Muitas-simples" target="_blank" class="btn-github full-width">GitHub</a>
+                    </div>
                 </div>
+
                 <div class="projeto-box">
+                    <div class="project-thumb" style="background-image: url('src/img/nacionalidade-capa.jpg');" aria-label="Imagem de capa do Nacionalidades"></div>
+                    
                     <h3>Paises e Nacionalidades </h3>
-                    <p>Confirmação simples de nacionalidade para testes acadêmicos.</p>
-                    <a href="https://github.com/CarvalhoSystems/Confirma-o-de-Nacionalidade-" target="_blank">Ver no GitHub</a>
-                    <a href="https://CarvalhoSystems.github.io/Confirma-o-de-Nacionalidade-" target="_blank">Ver o Site</a>
+                    <p class="project-detail">
+                        **Desafio:** Confirmação simples de nacionalidade para testes acadêmicos, usando lógica condicional (`if/else`).
+                    </p>
+                    <p class="project-detail">
+                        **Resultado:** Aplicação leve e focada na demonstração de fluxo de controle em JavaScript.
+                    </p>
+                    <p class="project-stack">
+                        Stack: HTML, JavaScript
+                    </p>
+                    <div class="project-actions">
+                        <a href="https://CarvalhoSystems.github.io/Confirma-o-de-Nacionalidade-" target="_blank" class="btn-demo">🚀 Ver o Site</a>
+                        <a href="https://github.com/CarvalhoSystems/Confirma-o-de-Nacionalidade-" target="_blank" class="btn-github">GitHub</a>
+                    </div>
                 </div>
+
                 <div class="projeto-box">
-                    <h3>Horario em Tempo Real</h3>
-                    <p>Sistema de horário em tempo real.</p>
-                    <a href="https://github.com/CarvalhoSystems/Time-Hours" target="_blank">Ver no GitHub</a>
-                </div>
-                <div class="projeto-box">
-                    <h3>Sistema de convenio</h3>
-                    <p>Sistema de cadastro de pacientes e exames medicos<br>login para teste (Senha : admin) e o (Login : admin)</p>
-                    <a href="https://github.com/CarvalhoSystems/VIDA-" target="_blank">Ver no GitHub</a>
-                    <a href="https://CarvalhoSystems.github.io/VIDA-/" target="_blank">Ver o Site</a>
-                </div>
-                <div class="projeto-box">
+                    <div class="project-thumb" style="background-image: url('src/img/boletim-capa.jpg');" aria-label="Imagem de capa do Boletim Escolar"></div>
+                    
                     <h3>Boletim Escolar</h3>
-                    <p>Projeto simples de boletim escolar<br>Usuario vai adcionar o nome e nota do aluno mesmo ira dividir por 4 e dar como resultado a media do aluno.</p>
-                    <a href="https://github.com/CarvalhoSystems/Boletim-Escolar" target="_blank">Ver no GitHub</a>
-                    <a href="https://CarvalhoSystems.github.io/Boletim-Escolar/" target="_blank">Ver o Site</a>
+                    <p class="project-detail">
+                        **Desafio:** Criar um projeto para receber notas de alunos, dividir por 4 e calcular a média, demonstrando funções de cálculo.
+                    </p>
+                    <p class="project-detail">
+                        **Resultado:** Aplicação simples, ideal para demonstrar lógica de input, processamento e output de dados em JavaScript.
+                    </p>
+                    <p class="project-stack">
+                        Stack: HTML, JavaScript (Funções de Cálculo)
+                    </p>
+                    <div class="project-actions">
+                        <a href="https://CarvalhoSystems.github.io/Boletim-Escolar/" target="_blank" class="btn-demo">🚀 Ver o Site</a>
+                        <a href="https://github.com/CarvalhoSystems/Boletim-Escolar" target="_blank" class="btn-github">GitHub</a>
+                    </div>
                 </div>
-                 <div class="projeto-box">
+
+                <div class="projeto-box">
+                    <div class="project-thumb" style="background-image: url('/src/img/capa-hamburgueria.png');" aria-label="Imagem de capa da Hamburgueria"></div>
+                    
                     <h3>Sistemas-de-uma-Hamburgueria</h3>
-                    <p>Sistema simples usado em treinamento da faculdade.</p>
-                    <a href="https://github.com/CarvalhoSystems/hamburgueria" target="_blank">Ver no GitHub</a>
-                    <a href="https://carvalhosystems.github.io/Hamburgueria" target="_blank">Ver o Site</a>
+                    <p class="project-detail">
+                        **Desafio:** Projeto universitário para simular um sistema de pedidos de hamburgueria e demonstrar interação básica de menu e seleção de itens.
+                    </p>
+                    <p class="project-detail">
+                        **Resultado:** Demonstração de layout e interação básica de menu e seleção de itens.
+                    </p>
+                    <p class="project-stack">
+                        Stack: HTML, CSS, JavaScript
+                    </p>
+                    <div class="project-actions">
+                        <a href="https://carvalhosystems.github.io/Hamburgueria" target="_blank" class="btn-demo">🚀 Ver o Site</a>
+                        <a href="https://github.com/CarvalhoSystems/hamburgueria" target="_blank" class="btn-github">GitHub</a>
+                    </div>
                 </div>
-        </div>
+
+            </div>
     </section>
 
-    <!-- ===== CONTATO ===== -->
     <section class="contato" id="contato">
         <div class="interface">
             <h2 class="titulo">FALE <span>COMIGO.</span></h2>
             <div class="btn-social">
-                <a href="https://github.com/CarvalhoSystems" target="_blank"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/rodrigo-carvalho-273a8937a" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://www.instagram.com/carvalhosystems" target="_blank"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.me/5511999258488" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://github.com/CarvalhoSystems" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/rodrigo-carvalho-273a8937a" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/carvalhosystems" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/5511999258488" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
             </div>
         </div>
     </section>
-
-    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <div class="interface line-footer">
-            <img class="logo-footer" src="/src/img/logo cs.png" alt="Logo Carvalho Systems">
-            <div class="btn-social">
-                <a href="https://github.com/CarvalhoSystems" target="_blank"><i class="bi bi-github"></i></a
-            </div>
-        </div>  
+        <div class="interface">
+            <p>&copy; 2025 Rodrigo Carvalho. Todos os direitos reservados</p>
+        </div>
     </footer>
     </body>
 </html>
-

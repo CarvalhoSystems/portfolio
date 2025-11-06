@@ -94,7 +94,7 @@ h2.titulo span {
 .text-section {
   flex: 1;
   max-width: 650px;
-  min-width: 450px;
+  width: 100%; /* Garante que o container se ajuste à largura disponível */
 }
 
 .text-section h1 {
@@ -513,6 +513,9 @@ h2.titulo span {
     padding: 140px 4% 40px;
   }
   .text-section h1 {
+    font-size: 42px; /* Aumenta um pouco para melhor impacto em mobile */
+  }
+  .text-section {
     font-size: 38px;
     line-height: 1.1;
   }
@@ -527,10 +530,6 @@ h2.titulo span {
   .especialidades .flex,
   .projetos .flex {
     grid-template-columns: 1fr;
-  }
-  .text-section h1 {
-    font-size: 38px;
-    line-height: 1.1;
   }
   .projeto-box {
     min-height: auto;

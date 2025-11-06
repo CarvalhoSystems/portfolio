@@ -528,4 +528,16 @@ h2.titulo span {
   .projetos .flex {
     grid-template-columns: 1fr;
   }
+  .text-section h1 {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+  .projeto-box {
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .text-section h1 {
+    font-size: 32px;
+  }
 }

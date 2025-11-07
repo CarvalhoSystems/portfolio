@@ -162,7 +162,6 @@ h2.titulo span {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  animation: pulse 4s infinite ease-in-out;
 }
 
 .profile-image {
@@ -170,16 +169,6 @@ h2.titulo span {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
 }
 
 /* ===== ESPECIALIDADES ===== */
@@ -253,9 +242,9 @@ h2.titulo span {
 .txt-sobre img {
   max-width: 350px;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   /* NOVA CORREÇÃO: Borda dourada na imagem */
   border: 3px solid var(--accent-color);
+  box-shadow: 0 0 25px rgba(228, 177, 50, 0.6); /* Efeito de brilho */
 }
 
 .txt-sobre .btn-social {

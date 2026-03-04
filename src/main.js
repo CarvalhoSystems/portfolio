@@ -32,3 +32,4 @@ if (backToTopButton) {
 // Estado inicial
 toggleBackToTop();
 revealOnScroll();
+// Fim Estado inicial

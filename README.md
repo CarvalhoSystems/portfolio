@@ -1,18 +1,54 @@
-## Getting Started
+O Gemini disse
+Fala, Rodrigo! O seu portfólio está muito bem estruturado e passa uma imagem bem profissional, especialmente com esse seu background de 9 anos em Telecomunicações (isso conta muito como experiência em resolução de problemas!).
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Para o seu README.md no GitHub, o objetivo é vender o projeto e mostrar sua competência técnica de forma rápida. Aqui está uma estrutura personalizada baseada no seu HTML:
 
-## Folder Structure
+🚀 Carvalho Systems | Portfólio Profissional
+Bem-vindo ao repositório do meu portfólio pessoal. Este projeto foi desenvolvido para centralizar meus principais trabalhos, especialidades e fornecer uma experiência de navegação premium para potenciais clientes e parceiros.
 
-The workspace contains two folders by default, where:
+🎯 Sobre o Projeto
+Este site é a vitrine da Carvalho Systems. Ele reflete minha transição de 9 anos de experiência em Telecomunicações para o Desenvolvimento Web, unindo lógica de resolução de problemas complexos com design moderno e focado em conversão.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+✨ Funcionalidades
+Design Responsivo: Adaptado para qualquer tamanho de tela (Mobile First).
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Performance & SEO: Otimizado para carregamento rápido e visibilidade em motores de busca.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Interface Intuitiva: Navegação fluida com efeitos de scroll (reveal) e acessibilidade.
 
-## Dependency Management
+Catálogo de Projetos: Galeria dinâmica mostrando aplicações reais como E-commerces, SaaS e sistemas CRUD.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+🛠️ Tecnologias Utilizadas
+Para garantir performance e uma base sólida, utilizei:
+
+Linguagens: HTML5, CSS3, JavaScript (ES6+ e POO).
+
+Estilização: CSS Custom Properties (Variáveis), Flexbox, Grid Layout.
+
+Ícones & Fontes: Bootstrap Icons, Font Awesome e Google Fonts (Montserrat & Roboto).
+
+Animações: Scripts personalizados para efeitos de revelação ao scroll.
+
+📂 Principais Projetos Listados
+YB Make Site: E-commerce focado em conversão.
+
+SAAs Barbearia: Sistema de agendamento online.
+
+Banco Digital: Lógica de negócio e Programação Orientada a Objetos.
+
+Sistema de Convênio (VIDA+): Gestão administrativa com operações CRUD.
+
+🚀 Como visualizar
+Você pode acessar o portfólio online através do link:
+👉 carvalhosystems.github.io
+
+📩 Contato
+Estou sempre aberto a novos projetos e desafios técnicos.
+
+LinkedIn: Rodrigo Carvalho
+
+WhatsApp: Conversar agora
+
+Instagram: @carvalhosystems
+
+Desenvolvido por Rodrigo Carvalho • Carvalho Systems 2026

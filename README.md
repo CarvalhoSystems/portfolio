@@ -1,8 +1,3 @@
-O Gemini disse
-Fala, Rodrigo! O seu portfólio está muito bem estruturado e passa uma imagem bem profissional, especialmente com esse seu background de 9 anos em Telecomunicações (isso conta muito como experiência em resolução de problemas!).
-
-Para o seu README.md no GitHub, o objetivo é vender o projeto e mostrar sua competência técnica de forma rápida. Aqui está uma estrutura personalizada baseada no seu HTML:
-
 🚀 Carvalho Systems | Portfólio Profissional
 Bem-vindo ao repositório do meu portfólio pessoal. Este projeto foi desenvolvido para centralizar meus principais trabalhos, especialidades e fornecer uma experiência de navegação premium para potenciais clientes e parceiros.
 

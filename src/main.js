@@ -7,7 +7,7 @@ function toggleBackToTop() {
 }
 
 function revealOnScroll() {
-  const triggerPoint = window.innerHeight * 0.9;
+  const triggerPoint = window.innerHeight * 0.85; // Ajuste leve para melhor timing
 
   revealElements.forEach((element) => {
     const elementTop = element.getBoundingClientRect().top;
@@ -17,10 +17,15 @@ function revealOnScroll() {
   });
 }
 
-window.addEventListener("scroll", () => {
-  toggleBackToTop();
-  revealOnScroll();
-});
+// Uso de throttle ou passive listener para melhor performance de scroll
+window.addEventListener(
+  "scroll",
+  () => {
+    toggleBackToTop();
+    revealOnScroll();
+  },
+  { passive: true },
+);
 
 if (backToTopButton) {
   backToTopButton.addEventListener("click", (e) => {

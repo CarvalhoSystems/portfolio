@@ -1,5 +1,6 @@
 //Imports
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { inject } from "@vercel/analytics";
 
 const backToTopButton = document.getElementById("back-to-top");
 const revealElements = document.querySelectorAll(".reveal");
@@ -36,3 +37,6 @@ if (backToTopButton) {
 toggleBackToTop();
 revealOnScroll();
 // Fim Estado inicial
+
+// Initialize Vercel Analytics
+inject();

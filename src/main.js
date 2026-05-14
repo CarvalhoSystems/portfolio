@@ -28,18 +28,28 @@ function revealOnScroll() {
 
 function animateNumbers() {
   const numbers = document.querySelectorAll(".metric-number");
-  numbers.forEach((num) => {
-    const target = +num.getAttribute("data-target");
-    const count = +num.innerText;
-    const speed = target / 50; // Velocidade da animação
 
-    if (count < target) {
-      num.innerText = Math.ceil(count + speed);
-      setTimeout(animateNumbers, 30);
-    } else {
-      num.innerText = target;
+  const updateValues = () => {
+    let finished = true;
+    numbers.forEach((num) => {
+      const target = +num.getAttribute("data-target");
+      const current = +num.innerText;
+      const increment = target / 40; // Suavidade da subida
+
+      if (current < target) {
+        num.innerText = Math.ceil(current + increment);
+        finished = false;
+      } else {
+        num.innerText = target;
+      }
+    });
+
+    if (!finished) {
+      requestAnimationFrame(updateValues);
     }
-  });
+  };
+
+  updateValues();
 }
 
 // Uso de throttle ou passive listener para melhor performance de scroll

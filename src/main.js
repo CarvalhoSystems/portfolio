@@ -1,3 +1,5 @@
+console.log("Interface v2.0 carregada com sucesso!");
+
 const backToTopButton = document.getElementById("back-to-top");
 const revealElements = document.querySelectorAll(".reveal");
 

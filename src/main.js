@@ -1,6 +1,3 @@
-//Imports
-import { SpeedInsights } from "@vercel/speed-insights/next";
-
 const backToTopButton = document.getElementById("back-to-top");
 const revealElements = document.querySelectorAll(".reveal");
 

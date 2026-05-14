@@ -2,6 +2,7 @@ console.log("Interface v2.0 carregada com sucesso!");
 
 const backToTopButton = document.getElementById("back-to-top");
 const revealElements = document.querySelectorAll(".reveal");
+let numbersAnimated = false; // Garante que a animação ocorra apenas uma vez
 
 function toggleBackToTop() {
   if (!backToTopButton) return;
@@ -15,6 +16,28 @@ function revealOnScroll() {
     const elementTop = element.getBoundingClientRect().top;
     if (elementTop < triggerPoint) {
       element.classList.add("is-visible");
+
+      // Inicia o contador apenas se ainda não foi executado
+      if (element.classList.contains("hero-content") && !numbersAnimated) {
+        numbersAnimated = true;
+        animateNumbers();
+      }
+    }
+  });
+}
+
+function animateNumbers() {
+  const numbers = document.querySelectorAll(".metric-number");
+  numbers.forEach((num) => {
+    const target = +num.getAttribute("data-target");
+    const count = +num.innerText;
+    const speed = target / 50; // Velocidade da animação
+
+    if (count < target) {
+      num.innerText = Math.ceil(count + speed);
+      setTimeout(animateNumbers, 30);
+    } else {
+      num.innerText = target;
     }
   });
 }
